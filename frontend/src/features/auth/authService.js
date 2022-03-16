@@ -10,6 +10,8 @@ const register = async (userData) => {
     localStorage.setItem("user", JSON.stringify(response.data));
   }
 
+  console.log(`URL: ${response.API_URL}`)
+  console.log(`User data to register: ${response.data}`)
   return response.data;
 };
 
